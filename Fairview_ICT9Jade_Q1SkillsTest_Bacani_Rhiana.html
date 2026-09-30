@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Skills Test 1</title>
+  
+   <style>
+       body {
+           font-family: 'serif', sans-serif, monospace;
+           background-color: lemonchiffon;
+           margin: 0;
+           padding: 20px;
+           color:black;
+       }
+
+
+       .outer-wrapper {
+           background-color:lightpink;
+           padding: 25px;
+           border-radius: 4px;
+           max-width: 1000px; 
+           margin: 0 auto;
+       }
+
+
+       .main-container {
+           display: flex;
+           gap: 20px;
+           align-items: flex-start;
+       }
+
+
+       .content-side {
+           flex: 1;
+           background-color:lemonchiffon;
+           padding: 30px;
+           border-radius: 12px;
+           box-shadow: 0 2px 8px rgb(255, 171, 171);
+       }
+
+
+       .image-side {
+           flex: 1;
+       }
+
+
+       .robot-img {
+           width: 100%;
+           height: auto;
+           display: block;
+           border-radius: 4px;
+       }
+
+
+       .logo-container {
+           text-align: center;
+           margin-bottom: 15px;
+       }
+
+
+       .school-logo {
+           width: 90px;
+           height: auto;
+       }
+
+
+       .main-title {
+           text-align: center;
+           font-size: 20px;
+           margin: 10px 0 20px 0;
+       }
+
+
+       .main-title a {
+           color:lightpink;
+           text-decoration: underline;
+           font-weight: bold;
+       }
+
+
+       .intro-text {
+           font-size: 13px;
+           line-height: 1.5;
+           margin-bottom: 20px;
+       }
+
+
+       .form-group {
+           margin-bottom: 14px;
+       }
+
+
+       label, .field-label {
+           display: block;
+           font-size: 13px;
+           font-weight: bold;
+           margin-bottom: 4px;
+       }
+
+
+       input[type="text"],
+       input[type="email"],
+       select,
+       textarea {
+           width: 100%;
+           padding: 6px 8px;
+           border: 1px solid #feb0b0;
+           border-radius: 4px;
+           font-family: inherit;
+           font-size: 13px;
+           box-sizing: border-box;
+           background-color: #f9ddbf;
+       }
+
+
+       textarea {
+           resize: vertical;
+       }
+
+
+       .inline-group {
+           font-size: 13px;
+       }
+
+
+       .inline-group .field-label {
+           display: inline-block;
+       }
+
+
+       .inline-label {
+           display: inline;
+           font-weight: normal;
+           margin-left: 2px;
+           margin-right: 12px;
+       }
+
+
+       .list-section {
+           text-align: center;
+           margin-top: 20px;
+       }
+
+
+       .list-section h2 {
+           font-size: 14px;
+           color:lemonchiffon;
+           margin-bottom: 8px;
+       }
+
+
+       .list-section ul,
+       .list-section ol {
+           display: inline-block;
+           text-align: left;
+           font-size: 12px;
+           margin: 0;
+           padding-left: 20px;
+       }
+
+
+       .list-section li {
+           margin-bottom: 4px;
+       }
+
+
+       .list-section a {
+           color: #ffa3a3;
+           text-decoration: underline;
+       }
+
+
+       /* Submit Button */
+       .center-btn {
+           text-align: center;
+           margin-top: 20px;
+       }
+
+
+       .submit-btn {
+           background-color: #ffaeae;
+           color: #ffffff;
+           border: none;
+           padding: 8px 18px;
+           font-family: inherit;
+           font-size: 12px;
+           border-radius: 4px;
+           cursor: pointer;
+       }
+
+
+       .submit-btn:hover {
+           background-color: #f7acac;
+       }
+   </style>
+</head>
+<body>
+
+
+   <div class="outer-wrapper">
+       <div class="main-container">
+      
+           <div class="content-side">
+              
+               <div class="logo-container">
+                   <img src="https://files.orangeapps.ph/disk001/School_Files/1/school-65/school_profile/1784985566-2021.png" alt="O.B. Montessori Center Logo" class="school-logo">
+               </div>
+
+
+               <h1 class="main-title">
+               </h1>
+
+
+               <p class="intro-text">
+                   Welcome! Please answer this set to <strong>apply</strong> for our <em>Robotics Club</em>.
+               </p>
+
+
+               <form action="#" method="POST">
+
+
+                   <!-- Full Name -->
+                   <div class="form-group">
+                       <label for="fullname">Full Name:</label>
+                       <input type="text" id="fullname" name="fullname" required>
+                   </div>
+
+
+                   <!-- Email -->
+                   <div class="form-group">
+                       <label for="email">Email:</label>
+                       <input type="email" id="email" name="email" required>
+                   </div>
+
+
+                   <!-- Grade Level -->
+                   <div class="form-group">
+                       <label for="grade">Grade Level:</label>
+                       <select id="grade" name="grade">
+                           <option value="Grade 7" selected>Grade 7</option>
+                           <option value="Grade 8">Grade 8</option>
+                           <option value="Grade 9">Grade 9</option>
+                           <option value="Grade 10">Grade 10</option>
+                       </select>
+                   </div>
+
+
+                   <div class="form-group inline-group">
+                       <span class="field-label">Gender:</span>
+                       <input type="radio" id="male" name="gender" value="Male">
+                       <label for="male" class="inline-label">Male</label>
+
+
+                       <input type="radio" id="female" name="gender" value="Female">
+                       <label for="female" class="inline-label">Female</label>
+
+
+                       <input type="radio" id="male" name="gender" value="Prefer not to say">
+                       <label for="male" class="inline-label">Prefer not to say</label>
+                   </div>
+
+
+                   <!-- Skills Checkboxes -->
+                   <div class="form-group inline-group">
+                       <span class="field-label">What are your skills?</span>
+                       <br>
+                       <input type="checkbox" id="coding" name="skills" value="Coding">
+                       <label for="coding" class="inline-label">Coding</label>
+
+
+                       <input type="checkbox" id="design" name="skills" value="Design">
+                       <label for="design" class="inline-label">Design</label>
+
+
+                       <input type="checkbox" id="electronics" name="skills" value="Electronics">
+                       <label for="electronics" class="inline-label">Electronics</label>
+                   </div>
+
+
+                   <div class="form-group">
+                       <label for="reason">Tell us why you want to join:</label>
+                       <textarea id="reason" name="reason" rows="3"></textarea>
+                   </div>
+
+
+                   <!-- Unordered List -->
+                   <div class="list-section">
+                       <h2>Top Robotics Activities We Offer:</h2>
+                       <ul>
+                           <li>Line Following Robots</li>
+                           <li>Obstacle Avoidance Programming</li>
+                           <li>Light Following Robot</li>
+                       </ul>
+                   </div>
+
+
+                   <!-- Ordered List / Links -->
+                   <div class="list-section">
+                       <h2>Helpful Links:</h2>
+                       <ol>
+                           <li><a href="https://www.automate.org/robotics" 
+                            
+                            target="_blank">Robotics.org</a></li>
+                           <li><a href="https://www.automate.org/robotics"
+                            
+                            target="_blank">FIRST Robotics</a></li>
+                       </ol>
+                   </div>
+
+
+                   <div class="form-group center-btn">
+                       <button type="submit" class="submit-btn">Submit Application</button>
+                   </div>
+
+
+               </form>
+           </div>
+
+
+           <div class="image-side">
+               <img src="https://t3.ftcdn.net/jpg/17/73/18/20/360_F_1773182058_0IcZeEojrw9uJqFL32FCFkghVpAtDuWQ.jpg"
+               
+               alt="Robot Pointing" class="robot-img">
+           </div>
